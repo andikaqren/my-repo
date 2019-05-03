@@ -19,3 +19,7 @@ body{
     background-color:black;
     max-width: 400px;
 }
+#header{
+    max-width: 400px;
+    background-color:black;
+}
