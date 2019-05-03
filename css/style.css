@@ -15,8 +15,12 @@ body{
 #name{
     text-align:center;
 }
+<<<<<<< HEAD
 
 #footer{
+=======
+#header{
+>>>>>>> new-development1
     max-width: 400px;
     background-color:black;
 }
