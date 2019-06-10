@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailProduk">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/detailGambarProduk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imageProdukBesar"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:scaleType="fitXY"
+            android:src="@drawable/contohproduk" />
+
+        <TextView
+            android:id="@+id/detailNamaProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/namaProduk"
+            android:textSize="@dimen/titleTextMedium" />
+
+        <TextView
+            android:id="@+id/detailHargaProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/hargaProduk"
+            android:textSize="@dimen/fontActionBar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/detailJumlahStokProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/jumlahStok"
+
+                />
+
+            <TextView
+                android:id="@+id/detailSisaProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sisaProduk"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detailDeskripsiProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/deskripsi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/sellerAvatar"
+                android:layout_height="@dimen/sellerAvatar"
+                android:src="@drawable/account" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/detailNamaToko"
+                    android:layout_marginLeft="@dimen/margin_iconSmall"
+                    android:layout_height="wrap_content"
+                    android:text="@string/namaToko" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detailLokasiTOko"
+                    android:drawableLeft="@drawable/lokasi"
+                    android:text="@string/lokasi" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:background="@drawable/box"
+                android:text="@string/kunjungiToko"
+                android:id="@+id/detailKunjungiToko"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationBototm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/detail_menu" />
+</RelativeLayout>

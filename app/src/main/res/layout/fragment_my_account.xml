@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MyAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/NavHeight"
+        android:background="@drawable/box"
+        android:id="@+id/myAccoutnNav">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/myAccount"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titleTextMedium" />
+    </LinearLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/topNavHeight"
+            android:layout_marginTop="@dimen/NavHeight"
+            android:layout_height="match_parent">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_width="@dimen/myAccountMenu"
+                    android:layout_height="@dimen/myAccountMenu"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/myAccountImage"
+                        android:layout_height="@dimen/myAccountImage"
+                        android:layout_gravity="center"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/myAccount" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/myAccountMenu"
+                    android:layout_height="@dimen/myAccountMenu"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/myAccountImage"
+                        android:layout_height="@dimen/myAccountImage"
+                        android:layout_gravity="center"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/listPembelian" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/myAccountMenu"
+                    android:layout_height="@dimen/myAccountMenu"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/myAccountImage"
+                        android:layout_height="@dimen/myAccountImage"
+                        android:layout_gravity="center"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/jualBarang" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/myAccountMenu"
+                    android:layout_height="@dimen/myAccountMenu"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/myAccountImage"
+                        android:layout_height="@dimen/myAccountImage"
+                        android:layout_gravity="center"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/listPenjualan" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/myAccountMenu"
+                    android:layout_height="@dimen/myAccountMenu"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/myAccountImage"
+                        android:layout_height="@dimen/myAccountImage"
+                        android:layout_gravity="center"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/promo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/myAccountMenu"
+                    android:layout_height="@dimen/myAccountMenu"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/myAccountImage"
+                        android:layout_height="@dimen/myAccountImage"
+                        android:layout_gravity="center"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/contactUs" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/myAccountLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_columnSpan="2"
+                    android:background="@drawable/box"
+                    android:text="@string/logout"
+                    android:textColor="@color/white" />
+            </GridLayout>
+        </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
